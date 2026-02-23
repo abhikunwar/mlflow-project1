@@ -29,8 +29,8 @@ jobs:
 
       - name: Export model
         run: |
-          python export_model.py ${{ github.event.inputs.model_name || 'my_model' }} \
-                                 ${{ github.event.inputs.model_stage || 'Champion' }}
+          python export_model.py ${{ github.event.inputs.model_name || 'dev-version1' }} \
+                                 ${{ github.event.inputs.model_stage || 'champion' }}
 
       - name: Login to ECR
         run: |
