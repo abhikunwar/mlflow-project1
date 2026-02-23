@@ -1,6 +1,6 @@
 import sys
 import mlflow
-
+mlflow.set_tracking_uri(os.environ["MLFLOW_TRACKING_URI"])
 model_name = sys.argv[1]
 model_stage = sys.argv[2]
 
