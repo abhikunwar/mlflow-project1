@@ -1,0 +1,2 @@
+mlflow[boto3]==3.10.0 
+psycopg2-binary
