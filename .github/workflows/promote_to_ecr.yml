@@ -9,6 +9,8 @@ on:
 jobs:
   build-and-push:
     runs-on: self-hosted
+    env:
+      MLFLOW_TRACKING_URI: http://localhost:5000
     steps:
       - name: Checkout
         uses: actions/checkout@v3
